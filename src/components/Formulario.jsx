@@ -5,8 +5,7 @@ export const Formulario = ({ onNuevaCategoria }) => {
     const handleSubmit = (ev) => {
         ev.preventDefault();
         const input = ev.target.categoria.value;
-        const data = input; // añadir categoría
-        onNuevaCategoria(data);
+        onNuevaCategoria(input);
     }
 
     return (
